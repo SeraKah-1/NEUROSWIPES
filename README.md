@@ -1,20 +1,53 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Terminal Kognitif
 
-# Run and deploy your AI Studio app
+Terminal Kognitif adalah aplikasi pembelajaran berbasis AI yang dirancang untuk membantu pengguna memahami konsep-konsep kompleks dengan cepat melalui pendekatan psikologi kognitif dan desain antarmuka yang modern.
 
-This contains everything you need to run your app locally.
+## Fitur Utama
 
-View your app in AI Studio: https://ai.studio/apps/66b46cf0-23d3-4774-8250-8e113fa2de37
+- **AI Note Generator**: Buat catatan mendalam dari topik atau dokumen (PDF/Text) menggunakan Gemini atau Groq.
+- **Cognitive Card Stack**: Ubah catatan menjadi kartu belajar interaktif dengan sistem swipe (Paham, Lupa, Ragu).
+- **Mind Palace**: Visualisasikan hubungan antar konsep dalam ruang memori digital.
+- **Profile Receipt**: Dapatkan analisis gaya belajar Anda dalam format struk belanja yang unik, lengkap dengan "roast" tajam tentang kebiasaan kognitif Anda.
+- **Space Repetition**: Algoritma cerdas yang memunculkan kembali kartu yang Anda lupakan.
 
-## Run Locally
+## Tech Stack
 
-**Prerequisites:**  Node.js
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Database**: [Supabase](https://supabase.com/)
+- **AI Models**: 
+  - [Google Gemini API](https://ai.google.dev/)
+  - [Groq AI](https://groq.com/)
+- **Animations**: [Motion](https://motion.dev/) (Framer Motion)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
+## Setup Instruksi
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prasyarat
+
+- Node.js 18+
+- Akun Supabase
+- API Key Gemini dan/atau Groq
+
+### Instalasi
+
+1. Clone repositori ini.
+2. Instal dependensi:
+   ```bash
+   npm install
+   ```
+3. Buat file `.env.local` dan tambahkan variabel berikut:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
+   GROQ_API_KEY=your_groq_api_key
+   ```
+4. Jalankan server pengembangan:
+   ```bash
+   npm run dev
+   ```
+
+## Lisensi
+
+Proyek ini dilisensikan di bawah [MIT License](LICENSE).
