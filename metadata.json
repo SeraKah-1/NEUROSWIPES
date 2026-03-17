@@ -1,0 +1,5 @@
+{
+  "name": "Cognitive Swipe",
+  "description": "A spaced repetition learning app with glassmorphism UI, Tinder-like swiping, and psychological retention mechanics.",
+  "requestFramePermissions": []
+}
